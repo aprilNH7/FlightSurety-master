@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+
+    <main class= "container text-center">
+        <h1>Choose your flight insurance</h1>
+        <div id = "operational-status-wrapper" class = "operational-status">
+            <div id="operational-status">
+                <section>
+                    <h2>Check your contract status</h2>
+                    <div class="row">
+                        <div class="col-sm-4 field">Operational status</div>
+                        <div class="col-sm-8 field-value">true</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 field">How many airlines are registered</div>
+                        <div class="col-sm-8 field-value">1</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4 field">Number of funded Airlines</div>
+                        <div class="col-sm-8 field-value">1</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4 field">Your Current Flight</div>
+                        <div class="col-sm-8 field-value">CoBlxck7</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4 field">Funded Contract</div>
+                        <div class="col-sm-8 field-value">10</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4 field">Your updated time</div>
+                        <div class="col-sm-8 field-value">Friday November 15 2022 02:23:58 CDT (Central Daylight Time)</div>
+                    </div>
+                </section>
+            </div>
+            <div class="text-center">
+                <btn class="btn btn-primary" style="background-color:blue; color:white"id="update-status">UPDATE</btn>
+            </div>
+        </div>
+    <br>
+
+        <div class="airline">
+            <div class="contract-status-div text-center">
+                <h3>Would you like to enable this contract?</h3>
+                <btn class="btn btn-primary" style="background-color:blue; color:white" style="background-color:blue; color:white" id="set-contractData-true">Enable contract</btn>
+                <p class="text-description">!!CONTRACT OWNER NEEDED!!</p>
+            </div>
+        </div>
+
+
+        <div class="airline">
+            <div class="register-airline-wrapper text-center">
+                <h3>Input Airline</h3>
+                <input type="text" style="background-color:black; border-color:white; color:white" class="address" id="submit-airline-address" placeholder="Airline Address"/>
+                <btn class="btn btn-primary" style="background-color:blue; color:white" id="input-airline">Input Registration</btn>
+                <p class="text-description">!!REGISTERED AIRLINE NEEDED!!</p>
+            </div>
+
+            <div class="register-airline-wrapper text-center">
+                <h3>Vote airline</h3>
+                <select style="background-color:black; border-color:white; color:white" id="voting-airline-address"></select>
+                <btn class="btn btn-primary" style="background-color:blue; color:white" id="register-votes">Vote airline</btn>
+                <p class="text-description">!!REGISTERED AIRLINE NEEDED!!</p>
+            </div>
+
+            <div class="register-airline-wrapper text-center">
+                <h3>Register airline</h3>
+                <select style="background-color:black; border-color:white; color:white" id="executing-airline-address" ></select>
+                <btn class="btn btn-primary" style="background-color:blue; color:white" id="apply-registration">Apply registration</btn>
+                <p class="text-description">!!REGISTERED AIRLINE NEEDED AFTER VOTING IS APPLIED!!</p>
+            </div>
+
+            <div class="register-airline-wrapper text-center">
+                <h3>Pay</h3>
+                <btn class="btn btn-primary" style="background-color:blue; color:white" id="pay-airline">Fund</btn>
+                <p class="text-warning">!!REGISTERED AIRLINE IS NEEDED & 10 ETH IS REQUIRED!!</p>
+            </div>
+        </div>
+
+
+        <div class="airline-row">
+            <div class="register-airline-wrapper text-center">
+                <h3>Register flight</h3>
+                <p>
+                    <label for="register-flight-name">Name: </label>
+                    <input id="register-flight-name" placeholder="Flight Name" />
+                </p>
+                <p>
+                    <label for="register-flight-date">Date: </label>
+                    <input id="register-flight-date" type="date" />
+                </p>
+                <p>
+                    <label for="register-flight-time">Time: </label>
+                    <input id="register-flight-time" type="time" />
+                </p>
+
+                    <btn class="btn btn-primary" style="background-color:blue; color:white" id="register-flight">Register flight</btn>
+                    <p class="text-warning">!!PAID AIRLINE NEEDED!!</p>
+            </div>
+        </div>
+
+        <div >
+            <h2>Client Info</h2>
+                <div class="register-airline-wrapper text-center">
+                    <h5>Choose your Flight</h5>
+                    <select style="background-color:black; border-color:white; color:white" id="select-flight"></select>
+                    <br/>
+
+                    <btn class="btn btn-primary" style="background-color:blue; color:white" id="purchase-flight-insurance">Buy Insurance</btn>
+
+                    <btn class="btn btn-primary" style="background-color:blue; color:white" id="send-to-oracles">Send to Oracles</btn><br /><br />
+                    <btn class="btn btn-primary" style="background-color:blue; color:white" id="collect-funds">Receive Payment</btn>
+                </div>
+        </div>
+
+        <div class="log-row">
+            <div class="log-wrapper">
+                <h3>Transactions</h3>
+                <ul class="log-ul" id='log-ul'></ul>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

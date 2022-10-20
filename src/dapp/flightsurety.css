@@ -1,0 +1,57 @@
+body {
+    background-image: url('flight.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    background-color: #0125;
+    opacity: 0.9;
+    color: #fff;
+    padding: 10px;
+}
+
+.operational-status-wrapper {
+
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.operational-status {
+    padding: 10px;
+}
+
+.contract-status-div {
+    border: 4px solid white;
+    background-color: black;
+    padding: 3px;
+    flex: 30%;
+}
+
+.airline {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+
+.register-airline-wrapper {
+    border: 4px solid black;
+    background-color: red;
+    flex: 70%;
+    padding: 15px;
+}
+
+h5 {
+    color: #000;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+input.address {
+    min-width: 90%;
+    font-size: large;
+    margin-bottom: 7px;
+}
